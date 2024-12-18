@@ -1,0 +1,125 @@
+body {
+    background-color: #f8f9fa;
+    background-image: url('../images/education-pattern.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.card {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    border: none;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.appointment-card {
+    margin-bottom: 1rem;
+    transition: transform 0.2s;
+}
+
+.appointment-card:hover {
+    transform: translateY(-2px);
+}
+
+.status-pending {
+    color: #ffc107;
+}
+
+.status-approved {
+    color: #28a745;
+}
+
+.status-rejected {
+    color: #dc3545;
+}
+
+.status-completed {
+    color: #17a2b8;
+}
+
+.profile-section {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    border-radius: 5px;
+    padding: 8px 20px;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    border-color: #80bdff;
+}
+
+.page-container {
+    background: rgba(255, 255, 255, 0.95);
+    min-height: 100vh;
+    padding: 2rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+body.home-page {
+    background-image: url('../images/home-bg.jpg');
+}
+
+body.teachers-page {
+    background-image: url('../images/teachers-bg.jpg');
+}
+
+body.profile-page {
+    background-image: url('../images/profile-bg.jpg');
+}
+
+body.appointments-page {
+    background-image: url('../images/appointments-bg.jpg');
+}
+
+body.messaging-page {
+    background-image: url('../images/messaging-bg.jpg');
+}
+
+body.auth-page {
+    background-image: url('../images/auth-bg.jpg');
+}
+
+.auth-container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 2rem auto;
+}
+
+/* Login ve Register sayfaları için arka plan animasyonu */
+.auth-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/education-bg.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    animation: zoomInOut 20s infinite alternate;
+}
+
+/* Arka plan animasyonu */
+@keyframes zoomInOut {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
